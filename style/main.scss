@@ -61,6 +61,11 @@ $dark-pri: #0B5AA2;
   
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .items-body-content:hover {
   border-radius: 15px;
   border: 1px solid $dark-pri;
