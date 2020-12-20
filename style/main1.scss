@@ -1,0 +1,73 @@
+@import "fonts1";
+
+/*primary*/
+$cyan: #2AB2AF;
+$light-cyan: #5cd2ce;
+$bright-yellow:#C0DF34;
+
+/*Neutral*/
+$light-gray: #E5EFF5;
+$grayish-blue: #98A6BD;
+$white: #ffffff;
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: $light-gray;
+}
+
+.container {
+    width: 80%;
+    margin: 25px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'header header header header'
+    'sidebar sidebar sidebar sidebar'
+    'content content content content'
+    'footer footer footer footer';
+}
+
+.item {
+    width: 100%;
+    background-color: coral;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    background-color: $white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: $cyan;
+}
+
+.content {
+    grid-area: content;
+    background-color: $light-cyan;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 50%;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'header header header header'
+        'sidebar sidebar content content'
+        'footer footer footer footer';
+    }
+}
