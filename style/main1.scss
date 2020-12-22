@@ -34,23 +34,82 @@ body {
 .item {
     width: 100%;
     background-color: coral;
-    padding: 50px;
+    padding: 40px;
     box-sizing: border-box;
 }
+
+h2, h3 {
+    font-weight: 700;
+}
+
+h3, p {
+    color: $white;
+}
+
+ a {
+     text-decoration: none;
+ }
+
+ .button {
+    font-weight: 700;
+    background-color:$bright-yellow;
+    text-align: center;
+    color: $white;
+    display: block;
+    width: 85%;
+    padding: 10px 20px;
+    border-top: 1px solid $bright-yellow;
+    border-right: 1px solid $bright-yellow;
+    border-bottom: 1px solid $bright-yellow;
+    border-left: 1px solid $bright-yellow;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+ }
 
 .header {
     grid-area: header;
     background-color: $white;
+
+    & h2 {
+        color: $cyan;
+    }
+
+    & p.guarantee {
+        color: $bright-yellow;
+        font-weight: 700;
+
+    }
+
+    & p {
+        color: $grayish-blue;
+        line-height: 1.6;
+    }
 }
+
 
 .sidebar {
     grid-area: sidebar;
     background-color: $cyan;
+
+    & p.price {
+        color: $light-gray
+    }
+
+    & span.price {
+        color: $white;
+        font-size: 2rem;
+        font-weight: 700;
+    }    
 }
 
 .content {
     grid-area: content;
     background-color: $light-cyan;
+
+    & p {
+        color: $light-gray;
+        line-height: 1.6;
+    }
 }
 
 .footer {
@@ -62,7 +121,7 @@ body {
 
 @media screen and (min-width: 576px) {
     .container {
-        width: 50%;
+        width: 35%;
         margin: 100px auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -23,9 +23,38 @@ body {
 .item {
   width: 100%;
   background-color: coral;
-  padding: 50px;
+  padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+h3, p {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-weight: 700;
+  background-color: #C0DF34;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  width: 85%;
+  padding: 10px 20px;
+  border-top: 1px solid #C0DF34;
+  border-right: 1px solid #C0DF34;
+  border-bottom: 1px solid #C0DF34;
+  border-left: 1px solid #C0DF34;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -36,6 +65,20 @@ body {
   background-color: #ffffff;
 }
 
+.header h2 {
+  color: #2AB2AF;
+}
+
+.header p.guarantee {
+  color: #C0DF34;
+  font-weight: 700;
+}
+
+.header p {
+  color: #98A6BD;
+  line-height: 1.6;
+}
+
 .sidebar {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -44,12 +87,27 @@ body {
   background-color: #2AB2AF;
 }
 
+.sidebar p.price {
+  color: #E5EFF5;
+}
+
+.sidebar span.price {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .content {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: content;
   background-color: #5cd2ce;
+}
+
+.content p {
+  color: #E5EFF5;
+  line-height: 1.6;
 }
 
 .footer {
@@ -63,7 +121,7 @@ body {
 /*Responsive*/
 @media screen and (min-width: 576px) {
   .container {
-    width: 50%;
+    width: 35%;
     margin: 100px auto;
     display: -ms-grid;
     display: grid;
