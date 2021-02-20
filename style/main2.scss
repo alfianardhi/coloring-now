@@ -1,0 +1,23 @@
+@import "fonts2";
+
+/*primary*/
+$red: #ff7a7a;
+$green:#38cc8c;
+
+/*Accent*/
+$blue: 	#6055a5;
+
+/*Neutral*/
+$dark-blue:#3e3c49;
+$grayish-blue:#b9b6d3;
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: $red;
+}
