@@ -2,22 +2,30 @@
 
 /*primary*/
 $red: #ff7a7a;
-$green:#38cc8c;
+$green: #38cc8c;
 
 /*Accent*/
-$blue: 	#6055a5;
+$blue: #6055a5;
 
 /*Neutral*/
-$dark-blue:#3e3c49;
-$grayish-blue:#b9b6d3;
+$dark-blue: #3e3c49;
+$grayish-blue: #b9b6d3;
 
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    background-color: $red;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: $red;
+  background-image: url("../images/bg-intro-desktop.png");
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
 }
