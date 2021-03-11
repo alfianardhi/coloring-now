@@ -28,7 +28,7 @@ p {
 }
 
 .container {
-  width: 55%;
+  width: 70%;
   margin: 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,5 +59,54 @@ p {
           box-sizing: border-box;
   border: 1px solid #b9b6d3;
   border-radius: 5px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .login .form-wrapper input[type="text"]:focus,
+.container .login .form-wrapper input[type="password"]:focus {
+  border: 1px solid #3e3c49;
+}
+
+.container .login .form-wrapper input:focus::-webkit-input-placeholder {
+  color: #3e3c49;
+}
+
+.container .login .form-wrapper input:focus:-ms-input-placeholder {
+  color: #3e3c49;
+}
+
+.container .login .form-wrapper input:focus::-ms-input-placeholder {
+  color: #3e3c49;
+}
+
+.container .login .form-wrapper input:focus::placeholder {
+  color: #3e3c49;
+}
+
+.container .login .form-wrapper input[type="submit"] {
+  font-size: 1rem;
+  width: 100%;
+  padding: 18px 30px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #38cc8c;
+  border: 1px solid #38cc8c;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container .login p.agreement {
+  font-size: 0.7rem;
+  color: #b9b6d3;
+  text-align: center;
+}
+
+.container .login p.agreement span {
+  color: #ff7a7a;
 }
 /*# sourceMappingURL=main2.css.map */

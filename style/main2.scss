@@ -38,7 +38,7 @@ p {
 }
 
 .container {
-  width: 55%;
+  width: 70%;
   margin: 100px auto;
   display: flex;
   flex-direction: row;
@@ -62,6 +62,42 @@ p {
         box-sizing: border-box;
         border: 1px solid $grayish-blue;
         border-radius: 5px;
+        outline: none;
+        font-family: "Poppins", sans-serif;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        border: 1px solid $dark-blue;
+      }
+
+      input:focus::placeholder {
+        color: $dark-blue;
+      }
+
+      input[type="submit"] {
+        font-size: 1rem;
+        width: 100%;
+        padding: 18px 30px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: $green;
+        border: 1px solid $green;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+    p.agreement {
+      font-size: 0.7rem;
+      color: $grayish-blue;
+      text-align: center;
+
+      & span {
+        color: $red;
       }
     }
   }
