@@ -27,6 +27,10 @@ p {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 70%;
   margin: 100px auto;
@@ -41,6 +45,35 @@ p {
 
 .container .content {
   padding-right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content .text-wrapper {
+  margin: auto;
+}
+
+.container .login span.try {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.container .login a.button {
+  background-color: #6055a5;
+  text-align: center;
+  color: #b9b6d3;
+  display: block;
+  padding: 18px 30px;
+  border-top: 1px solid #6055a5;
+  border-right: 1px solid #6055a5;
+  border-bottom: 1px solid #6055a5;
+  border-left: 1px solid #6055a5;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 6px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 6px 2px 0px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .container .login .form-wrapper {
@@ -98,6 +131,8 @@ p {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 5px 0px;
 }
 
 .container .login p.agreement {

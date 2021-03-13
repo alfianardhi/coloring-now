@@ -37,6 +37,10 @@ p {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 70%;
   margin: 100px auto;
@@ -45,9 +49,35 @@ p {
 
   & .content {
     padding-right: 35px;
+    display: flex;
+
+    .text-wrapper {
+      margin: auto;
+    }
   }
 
   & .login {
+    & span.try {
+      color: $white;
+      font-weight: 600;
+    }
+
+    & a.button {
+      background-color:$blue;
+      text-align: center;
+      color: $grayish-blue;
+      display: block;
+      padding: 18px 30px;
+      border-top: 1px solid $blue;
+      border-right: 1px solid $blue;
+      border-bottom: 1px solid $blue;
+      border-left: 1px solid $blue;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 1px 6px 2px 0px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
     .form-wrapper {
       background-color: $white;
       padding: 30px 35px;
@@ -88,6 +118,7 @@ p {
         font-family: "Poppins", sans-serif;
         color: $white;
         cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 5px 0px;
       }
     }
 
