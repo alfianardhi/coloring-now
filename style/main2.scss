@@ -133,3 +133,29 @@ a {
     }
   }
 }
+
+@media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 576px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+      width: 100%;
+      padding:0px 15px;
+      margin: 50px 0px; 
+      flex-direction: column;
+
+      & .content {
+        text-align: center;
+        padding: 0px;
+        
+        & .text-wrapper p {
+          margin-bottom: 60px;
+        }
+      }
+    }
+}

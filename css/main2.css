@@ -144,4 +144,26 @@ a {
 .container .login p.agreement span {
   color: #ff7a7a;
 }
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 576px) and (-webkit-min-device-pixel-ratio: 2) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 50px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .content {
+    text-align: center;
+    padding: 0px;
+  }
+  .container .content .text-wrapper p {
+    margin-bottom: 60px;
+  }
+}
 /*# sourceMappingURL=main2.css.map */
