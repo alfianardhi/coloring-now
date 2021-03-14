@@ -1,2 +1,5 @@
 # coloring-now
----@__@---
+css playgrounds
+
+## Using technology :
+* CSS & SCSS
