@@ -1,0 +1,20 @@
+@import 'fonts3';
+
+/*primary*/
+$dark-violet: #2d2640;
+$grayish-blue: #95a9c6;
+
+/*neutral*/
+$very-dark-violet: #2b272f;
+$dark-grayish-violet: #837d87;
+$very-light-gray: #fafafa;
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Serif Display', 'Karla', sans-serif;
+  font-size: 16px;
+}
