@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,qIAAI;ADEZ,WAAW;AAIX,WAAW;AAKX,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uCAAuC;EACpD,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "../style/main3.scss",
+        "../style/_fonts3.scss"
+    ],
+    "names": [],
+    "file": "main3.css"
+}
